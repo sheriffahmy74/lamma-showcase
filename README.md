@@ -18,6 +18,27 @@ A bilingual (Arabic-first, RTL) Flutter app for Egypt: discover an outing, book 
 
 ---
 
+## Demo
+
+<table>
+  <tr>
+    <td width="320" align="center"><img src="media/highlights.gif" width="300" alt="Lamma highlights"/></td>
+    <td>
+
+**▶️ [Watch the full 5-minute walkthrough](media/lamma-demo.mp4)**, recorded on a real Android build against the live backend. Nothing is mocked:
+
+1. **Onboarding and sign-up**: birth date gives the age automatically; governorate and field of study feed ranking
+2. **Booking and Paymob checkout**: a declined card comes back as a clear "booking not completed" plus a notification
+3. **Search, filters, favorites**: category, all-in price range, date presets, empty state
+4. **Paid booking → group chat**: confirmed by the payment webhook, then text, image, ❤️ reaction and a voice note in the group's chat
+5. **Notifications and profile**: server-composed notifications, profile edit, photo upload
+6. **Padel**: publish a match missing players in three steps. The wallet is topped up by card, a push notification arrives, and 30 EGP is charged
+7. **Wallet, dark mode, English, reviews**: balance and history, withdrawal, full LTR English, verified-attendee review
+
+    </td>
+  </tr>
+</table>
+
 ## Screenshots
 
 <table>
@@ -45,6 +66,31 @@ A bilingual (Arabic-first, RTL) Flutter app for Egypt: discover an outing, book 
     <td align="center"><img src="screenshots/profile.png" width="230"/><br/><sub><b>Profile</b></sub></td>
     <td align="center"><img src="screenshots/home-english.png" width="230"/><br/><sub><b>English (LTR)</b>: every string exists in both languages</sub></td>
     <td align="center"><img src="screenshots/search.png" width="230"/><br/><sub><b>Search</b> suggestions by category</sub></td>
+  </tr>
+</table>
+
+### From the demo run
+
+<table>
+  <tr>
+    <td align="center"><img src="screenshots/paymob-checkout.png" width="230"/><br/><sub><b>Paymob hosted checkout</b> (test card)</sub></td>
+    <td align="center"><img src="screenshots/payment-success.png" width="230"/><br/><sub><b>Booking confirmed</b> by the webhook, not the client</sub></td>
+    <td align="center"><img src="screenshots/chat-voice-image.png" width="230"/><br/><sub><b>Group chat</b>: text, image, reaction, voice note</sub></td>
+  </tr>
+  <tr>
+    <td align="center"><img src="screenshots/chat-reactions.png" width="230"/><br/><sub><b>Message actions</b>: react, reply, info, copy, edit, delete</sub></td>
+    <td align="center"><img src="screenshots/padel-details.png" width="230"/><br/><sub><b>Padel</b>: level, players missing, duration</sub></td>
+    <td align="center"><img src="screenshots/padel-published.png" width="230"/><br/><sub><b>Match published</b>, with the server's push notification</sub></td>
+  </tr>
+  <tr>
+    <td align="center"><img src="screenshots/push-notification.png" width="230"/><br/><sub><b>Wallet top-up</b> lands as a push notification</sub></td>
+    <td align="center"><img src="screenshots/withdraw.png" width="230"/><br/><sub><b>Withdrawal</b> to InstaPay, mobile wallet or bank</sub></td>
+    <td align="center"><img src="screenshots/review.png" width="230"/><br/><sub><b>Reviews</b> from verified attendees, first name only</sub></td>
+  </tr>
+  <tr>
+    <td align="center"><img src="screenshots/dark-english.png" width="230"/><br/><sub><b>Dark mode + English</b></sub></td>
+    <td align="center"><img src="screenshots/profile-photo.png" width="230"/><br/><sub><b>Profile photo</b> uploaded to Supabase Storage</sub></td>
+    <td align="center"><img src="screenshots/search-filters-live.png" width="230"/><br/><sub><b>Filters</b> in use</sub></td>
   </tr>
 </table>
 
